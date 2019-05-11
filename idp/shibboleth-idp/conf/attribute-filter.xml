@@ -18,6 +18,7 @@
         <PolicyRequirementRule xsi:type="OR">
             <Rule xsi:type="Requester" value="https://sp.idptestbed/shibboleth" />
             <Rule xsi:type="Requester" value="http://idptestbed/sp/simplesamlphp" />
+            <Rule xsi:type="Requester" value="https://samltest.id/saml/sp" />
         </PolicyRequirementRule>
 
         <AttributeRule attributeID="eduPersonPrincipalName">

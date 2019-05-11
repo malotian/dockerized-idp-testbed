@@ -27,7 +27,8 @@
 
     <MetadataProvider id="TestSP"  xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/sp-metadata.xml"/>
     <MetadataProvider id="TestSimpleSAMLphp"  xsi:type="FilesystemMetadataProvider" metadataFile="%{idp.home}/metadata/ssp-metadata.xml"/>
-
+    <MetadataProvider id="SAMLtest" xsi:type="FileBackedHTTPMetadataProvider" backingFile="%{idp.home}/metadata/samltest-sp-metadata.xml" metadataURL="https://samltest.id/saml/sp" />
+ 
     <!-- Example HTTP metadata provider.  Use this if you want to download
          the metadata from a remote service.
          
@@ -62,7 +63,7 @@
         </MetadataFilter>
         
     </MetadataProvider>
-    
+   
     -->   
 
     <!-- Example file metadata provider.  Use this if you want to load metadata
