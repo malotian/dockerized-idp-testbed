@@ -33,6 +33,10 @@
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
 
+        <AttributeRule attributeID="mailx">
+            <PermitValueRule xsi:type="ANY" />
+        </AttributeRule>
+
         <AttributeRule attributeID="surname">
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
@@ -44,6 +48,15 @@
         <AttributeRule attributeID="eduPersonPrincipalName">
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
+       
+	<AttributeRule attributeID="eduPersonAffiliation"> 
+            <PermitValueRule xsi:type="ANY"/> 
+        </AttributeRule>
+
+	<AttributeRule attributeID="eduPersonAffiliationEx"> 
+            <PermitValueRule xsi:type="ANY"/> 
+        </AttributeRule>
+
 
     </AttributeFilterPolicy>
 
