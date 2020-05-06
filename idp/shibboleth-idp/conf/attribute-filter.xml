@@ -21,10 +21,6 @@
             <Rule xsi:type="Requester" value="https://samltest.id/saml/sp" />
         </PolicyRequirementRule>
 
-        <AttributeRule attributeID="eduPersonPrincipalName">
-            <PermitValueRule xsi:type="ANY" />
-        </AttributeRule>
-
         <AttributeRule attributeID="uid">
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
