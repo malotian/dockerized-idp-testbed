@@ -30,7 +30,7 @@
         
                 <bean id="intercept/attribute-release" parent="shibboleth.consent.AttributeReleaseFlow" />
 
-                <bean id="intercept/malotian-custom-handler" parent="shibboleth.consent.AttributeReleaseFlow" />
+                <bean id="intercept/malotian-release-attributes-post-processor" parent="shibboleth.consent.AttributeReleaseFlow" />
             </list>
         </property>
     </bean>

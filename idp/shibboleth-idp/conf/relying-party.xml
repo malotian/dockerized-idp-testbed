@@ -34,10 +34,10 @@
     <bean id="shibboleth.DefaultRelyingParty" parent="RelyingParty">
         <property name="profileConfigurations">
             <list>
-                <bean parent="Shibboleth.SSO" p:postAuthenticationFlows="attribute-release" p:outboundInterceptorFlows="malotian-custom-handler" />
+                <bean parent="Shibboleth.SSO" p:postAuthenticationFlows="attribute-release" p:outboundInterceptorFlows="malotian-release-attributes-post-processor" />
                 <ref bean="SAML1.AttributeQuery" />
                 <ref bean="SAML1.ArtifactResolution" />
-                <bean parent="SAML2.SSO" p:postAuthenticationFlows="#{{'attribute-release', 'malotian-custom-handler'}}" />
+                <bean parent="SAML2.SSO" p:postAuthenticationFlows="#{{'attribute-release', 'malotian-release-attributes-post-processor'}}" />
                 <ref bean="SAML2.ECP" />
                 <ref bean="SAML2.Logout" />
                 <ref bean="SAML2.AttributeQuery" />

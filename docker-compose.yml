@@ -11,14 +11,15 @@ services:
      - "80:80"
      - "443:443"
 
-  idp-customization:
-    build: ./idp-customization/
+  malotian-shibboleth-release-attributes-post-processor:
+    build: ./malotian-shibboleth-release-attributes-post-processor/
+    image: malotian/malotian-shibboleth-release-attributes-post-processor
 
   idp:
     build: ./idp/
     depends_on: 
      - ldap
-     - idp-customization
+     - malotian-shibboleth-release-attributes-post-processor
     environment:
      - JETTY_MAX_HEAP=64m
      - JETTY_BROWSER_SSL_KEYSTORE_PASSWORD=password
