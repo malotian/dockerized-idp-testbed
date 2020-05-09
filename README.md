@@ -16,8 +16,8 @@ More documentation is forthcoming, but it's a full working IDP, SP, and LDAP ser
 ## Prepping for the Test
 
 ```bash
-malotian@ubuntu.nameid.io:~/dockerized-idp-testbed/httpd-proxy$ cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.cer /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.crt
-malotian@ubuntu.nameid.io:~/dockerized-idp-testbed/httpd-proxy$ cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.key /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.key
+cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.cer /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.crt
+cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.key /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.key
 ```
 
 
