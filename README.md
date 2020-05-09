@@ -1,4 +1,4 @@
-# dockerized-idp-testbed
+# dockerized-shibboleth-lab
 
 Used to validate the following Unicon docker images:
 
