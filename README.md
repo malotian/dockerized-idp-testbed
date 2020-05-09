@@ -10,10 +10,16 @@ More documentation is forthcoming, but it's a full working IDP, SP, and LDAP ser
 
 1. Update the `idp/Dockerfile` with the version of the base image you want to test.
 2. Call `docker-compose build` and then `docker-compose up` (or `docker-compose up -d` to run as a daemon).
-3. Browse to `https://idptestbed/` (after setting up an `etc/hosts` file entry pointing to your Docker Host IP), and you can login with `staff1` and `password`.  
+3. Browse to `https://shibboleth.ubuntu.nameid.io/` (after setting up an `etc/hosts` file entry pointing to your Docker Host IP), and you can login with `staff1` and `password`.  
 4. `ctrl+c` then `docker-compose rm` cleans everything up to try again.
 
 ## Prepping for the Test
+
+```bash
+malotian@ubuntu.nameid.io:~/dockerized-idp-testbed/httpd-proxy$ cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.cer /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.crt
+malotian@ubuntu.nameid.io:~/dockerized-idp-testbed/httpd-proxy$ cp /opt/gluu-server/etc/certs/\*.ubuntu.nameid.io.key /home/malotian/dockerized-idp-testbed/httpd-proxy/etc-httpd/ssl/domain.key
+```
+
 
 If testing the Shibboleth IdP build process locally, you'll want to make sure to `docker pull centos:centos7` to ensure that you have the latest before building the IdP. This will ensure that your version will match what Docker Hub will use when it builds. 
 
@@ -62,5 +68,5 @@ jetty.alpn.defaultProtocol=http/1.1
 
 - Open the browser network analyzer tools. 
 - Ensure that the `protocol` type is shown. 1.
-- Browse to `https://idptestbed/idp/`. Chrome, firefox, and safari should show a protocol of "h2".
-- Try `curl -k -v https://idptestbed/idp/`. "HTTP/1.1" will likely be shown as curl (at least on OS X) does not have http/2 support.
+- Browse to `https://shibboleth.ubuntu.nameid.io/idp/`. Chrome, firefox, and safari should show a protocol of "h2".
+- Try `curl -k -v https://shibboleth.ubuntu.nameid.io/idp/`. "HTTP/1.1" will likely be shown as curl (at least on OS X) does not have http/2 support.

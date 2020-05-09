@@ -8,9 +8,9 @@
 /*
  * Example SimpleSAMLphp SAML 2.0 SP
  */
-$metadata['http://idptestbed/sp/simplesamlphp'] = array(
-	'AssertionConsumerService' => 'https://idptestbed/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp',
-	'SingleLogoutService' => 'https://idptestbed/simplesaml/module.php/saml/sp/saml2-logout.php/default-sp',
+$metadata['http://shibboleth.ubuntu.nameid.io/sp/simplesamlphp'] = array(
+	'AssertionConsumerService' => 'https://shibboleth.ubuntu.nameid.io/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp',
+	'SingleLogoutService' => 'https://shibboleth.ubuntu.nameid.io/simplesaml/module.php/saml/sp/saml2-logout.php/default-sp',
 );
 
 /*

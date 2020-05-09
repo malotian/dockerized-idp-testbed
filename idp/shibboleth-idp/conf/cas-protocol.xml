@@ -28,7 +28,7 @@
                       p:singleLogoutParticipant="true" />
                 -->
                 <bean class="net.shibboleth.idp.cas.service.ServiceDefinition"
-                      c:regex="https://idptestbed/.*"
+                      c:regex="https://shibboleth.ubuntu.nameid.io/.*"
                       p:group="non-proxying-services"
                       p:authorizedToProxy="false" />
                 

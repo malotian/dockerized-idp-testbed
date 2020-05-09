@@ -47,7 +47,7 @@ services:
   php-cas:
     build: ./php-cas/
     links:
-      - httpd-proxy:idptestbed
+      - httpd-proxy:shibboleth.ubuntu.nameid.io
     networks:
      - back
 

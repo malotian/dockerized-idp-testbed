@@ -20,7 +20,7 @@
     -->
 
     <!-- The ApplicationDefaults element is where most of Shibboleth's SAML bits are defined. -->
-    <ApplicationDefaults entityID="https://sp.idptestbed/shibboleth"
+    <ApplicationDefaults entityID="https://sp.shibboleth.ubuntu.nameid.io/shibboleth"
                          REMOTE_USER="eppn uid persistent-id targeted-id">
 
         <!--
@@ -41,7 +41,7 @@
             (Set discoveryProtocol to "WAYF" for legacy Shibboleth WAYF support.)
             You can also override entityID on /Login query string, or in RequestMap/htaccess.
             -->
-            <SSO entityID="https://idptestbed/idp/shibboleth">
+            <SSO entityID="https://shibboleth.ubuntu.nameid.io/idp/shibboleth">
               SAML2 SAML1
             </SSO>
 
@@ -65,7 +65,7 @@
         Allows overriding of error template information/filenames. You can
         also add attributes with values that can be plugged into the templates.
         -->
-        <Errors supportContact="admin@idptestbed"
+        <Errors supportContact="admin@shibboleth.ubuntu.nameid.io"
             helpLocation="/about.html"
             styleSheet="/shibboleth-sp/main.css"/>
         

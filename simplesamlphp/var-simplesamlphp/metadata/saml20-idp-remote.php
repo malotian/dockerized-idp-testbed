@@ -10,24 +10,24 @@
 /*
  * Guest IdP. allows users to sign up and register. Great for testing!
  */
-$metadata['https://idptestbed/idp/shibboleth'] = array(
+$metadata['https://shibboleth.ubuntu.nameid.io/idp/shibboleth'] = array(
 	'name' => array(
 		'en' => 'Shibboleth IdP',
 	),
 	'description'          => 'Test Shibboleth IdP.',
 
-	'SingleSignOnService'  => 'https://idptestbed/idp/profile/SAML2/Redirect/SSO',
-	'SingleLogoutService'  => 'https://idptestbed/idp/profile/SAML2/Redirect/SLO',
+	'SingleSignOnService'  => 'https://shibboleth.ubuntu.nameid.io/idp/profile/SAML2/Redirect/SSO',
+	'SingleLogoutService'  => 'https://shibboleth.ubuntu.nameid.io/idp/profile/SAML2/Redirect/SLO',
 	'certificate' => 'idp-signing.crt',
 );
 
-$metadata['https://idptestbed/idp/simplesamlphp'] = array(
+$metadata['https://shibboleth.ubuntu.nameid.io/idp/simplesamlphp'] = array(
 	'name' => array(
 		'en' => 'SimpleSAMLphp IdP',
 	),
 	'description'          => 'Test SimpleSAMLphp IdP.',
 
-	'SingleSignOnService'  => 'https://idptestbed/simplesaml/saml2/idp/SSOService.php',
-	'SingleLogoutService'  => 'https://idptestbed/simplesaml/saml2/idp/SingleLogoutService.php',
+	'SingleSignOnService'  => 'https://shibboleth.ubuntu.nameid.io/simplesaml/saml2/idp/SSOService.php',
+	'SingleLogoutService'  => 'https://shibboleth.ubuntu.nameid.io/simplesaml/saml2/idp/SingleLogoutService.php',
 	'certificate' => 'server.crt',
 );

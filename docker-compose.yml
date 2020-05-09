@@ -50,7 +50,7 @@ services:
     container_name: simplesamlphp
     build: ./simplesamlphp/
     links:
-      - httpd-proxy:idptestbed
+      - httpd-proxy:shibboleth.ubuntu.nameid.io
     networks:
      - back
     secrets:
@@ -60,7 +60,7 @@ services:
     container_name: php-cas
     build: ./php-cas/
     links:
-      - httpd-proxy:idptestbed
+      - httpd-proxy:shibboleth.ubuntu.nameid.io
     networks:
      - back
 

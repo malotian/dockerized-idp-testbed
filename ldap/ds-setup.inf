@@ -1,5 +1,5 @@
 [General]
-AdminDomain =idptestbed
+AdminDomain =shibboleth.ubuntu.nameid.io
 ConfigDirectoryAdminID = admin
 ConfigDirectoryAdminPwd = admin
 ConfigDirectoryLdapURL = ldap://localhost:389/o=NetscapeRoot
@@ -24,5 +24,5 @@ RootDNPwd = password
 ServerIdentifier = dir
 ServerPort = 389
 SlapdConfigForMC = yes
-Suffix = dc=idptestbed
+Suffix = dc=shibboleth.ubuntu.nameid.io
 UseExistingMC = No

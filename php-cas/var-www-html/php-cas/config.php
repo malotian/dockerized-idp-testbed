@@ -24,7 +24,7 @@ $phpcas_path = '/usr/share/pear/';
 ///////////////////////////////////////
 
 // Full Hostname of your CAS Server
-$cas_host = 'idptestbed';
+$cas_host = 'shibboleth.ubuntu.nameid.io';
 
 // Context of the CAS Server
 $cas_context = '/idp/profile/cas';
@@ -44,7 +44,7 @@ $cas_port = 443;
 #$cas_real_hosts = array('cas-real-1.example.com', 'cas-real-2.example.com');
 
 // Client config for cookie hardening
-$client_domain = 'idptestbed';
+$client_domain = 'shibboleth.ubuntu.nameid.io';
 $client_path = 'phpcas';
 $client_secure = true;
 $client_httpOnly = true;
